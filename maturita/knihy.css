@@ -51,7 +51,7 @@ a:hover {
 
 /* Lists */
 ul {
-    list-style-type: disc;
+    list-style-type: circle;
     margin-left: 20px;
     margin-bottom: 20px;
 }
