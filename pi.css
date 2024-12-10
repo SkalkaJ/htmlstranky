@@ -11,6 +11,8 @@ body {
     line-height: 1.6;
     background-color: #f0f0f0;
     color: #333;
+    word-wrap: break-word; /* Přidáno pro zalamování textu */
+    overflow-wrap: break-word; /* Přidáno pro zalamování textu */
 }
 
 /* Hlavička */
