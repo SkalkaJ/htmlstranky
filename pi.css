@@ -1,0 +1,143 @@
+/* Resetování stylů */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Obecné nastavení */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Hlavička */
+header {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigace */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 0;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #4a90e2;
+}
+
+/* Hlavní obsah */
+main {
+    float: left;
+    width: 70%;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Postranní panel */
+aside {
+    float: right;
+    width: 28%;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Sekce */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+    color: #4a90e2;
+}
+
+/* Patička */
+footer {
+    clear: both;
+    background-color: #4a90e2;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Odkazy v postranní navigaci */
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Odkazy při najetí myší */
+nav a:hover,
+aside ul li a:hover {
+    color: #4a90e2;
+}
+
+/* Responzivní design */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main, aside {
+        width: 100%;
+        float: none;
+        padding: 10px;
+    }
+
+    aside {
+        background-color: #fff;
+    }
+
+    header, footer {
+        padding: 15px;
+    }
+
+    header h1, section h2, aside h2 {
+        font-size: 1.5em;
+    }
+
+    nav a {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    header h1, section h2, aside h2 {
+        font-size: 1.2em;
+    }
+}
