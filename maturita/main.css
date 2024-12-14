@@ -1,3 +1,11 @@
+/* Resetování stylů */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Obecné nastavení */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,6 +13,7 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Hlavička */
 h1 {
     background-color: #333;
     color: #fff;
@@ -13,6 +22,7 @@ h1 {
     margin: 0;
 }
 
+/* Odkazy */
 a {
     text-decoration: none;
     color: #333;
@@ -22,6 +32,48 @@ a:hover {
     color: #f38f0b;
 }
 
+/* Navigace */
+nav {
+    background-color: #333;
+    color:#f38f0b;
+    padding: 10px 0;
+    text-align: left;
+}
+
+nav a {
+    color: #fff;
+    text-align: left;
+    margin: 15px;
+}
+
+
+nav ul {
+    list-style: none;
+    color:#f38f0b;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    color:#f38f0b;
+}
+
+nav ul li a {
+    color: #ddd;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #f38f0b;
+    color: #fff;
+}
+
+/* Seznamy */
 ul {
     list-style-type: none;
     padding: 0;
@@ -38,6 +90,7 @@ ul ul {
     margin-left: 20px;
 }
 
+/* Odstavce */
 p {
     padding: 10px;
     background-color: #fff;
@@ -45,6 +98,7 @@ p {
     margin: 10px;
 }
 
+/* Obrázky */
 img {
     display: block;
     margin: 10px auto;
@@ -52,13 +106,7 @@ img {
     height: auto;
 }
 
-footer {
-    background-color: #333;
-    color: #333;
-    text-align: center;
-    padding: 10px;
-}
-
+/* Responzivní design */
 @media (max-width: 768px) {
     h1 {
         font-size: 1.5em;
@@ -72,6 +120,14 @@ footer {
     p {
         padding: 8px;
         font-size: 0.9em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
     }
 }
 
