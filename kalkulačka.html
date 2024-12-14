@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulačka</title>
+    <link rel="stylesheet" href="kalkulačka.css">
+</head>
+<body>
+    <header>
+        <h1>Jednoduchá Kalkulačka</h1>
+    </header>
+    <nav>
+        <a href="https://skalkaj.github.io/htmlstranky/index.html">Zpět na hlavní stránku</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Vypočítejte</h2>
+            <form id="calculator">
+                <input type="text" id="value1" placeholder="První číslo">
+                <input type="text" id="value2" placeholder="Druhé číslo">
+                <div>
+                    <button type="button" onclick="calculate('+')">+</button>
+                    <button type="button" onclick="calculate('-')">-</button>
+                    <button type="button" onclick="calculate('*')">*</button>
+                    <button type="button" onclick="calculate('/')">/</button>
+                </div>
+            </form>
+            <div id="result"></div>
+        </section>
+    </main>
+    <script src="kalkulačka.js"></script>
+</body>
+</html>
